@@ -1,0 +1,9 @@
+stages:
+  - test
+
+#проверка наличия и версии nginx
+test_nginx:
+  stage: test
+  script:
+    - which nginx && nginx -v
+
